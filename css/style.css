@@ -17,7 +17,6 @@ h6 {
 
 /* navbar */
 
-/* Navigation bar container */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -60,12 +59,24 @@ h6 {
 
 /* home page */
 
-.cta {
+.hero {
+    background-color: #0A1A5C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    gap: 40px;
+}
+
+.hero-title {
     display: flex;
     justify-content: left;
     align-items: left;
     height: 100vh;
     text-align: left;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
 .lost-btn {
@@ -85,4 +96,22 @@ h6 {
     border-radius: 50px;
     font-weight: 600;
     border: 2px solid #FFFFFF;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-mascot {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-mascot img {
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
