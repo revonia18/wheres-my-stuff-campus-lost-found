@@ -69,14 +69,16 @@ h6 {
 }
 
 .hero-title {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    height: 100vh;
-    text-align: left;
+    margin: 0 0 32px;
     font-size: 56px;
     font-weight: 800;
     letter-spacing: -1px;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
 }
 
 .lost-btn {
@@ -101,12 +103,15 @@ h6 {
 .hero-text {
     flex: 1;
     max-width: 600px;
+    transform: translateY(-30px);
 }
 
 .hero-mascot {
     flex: 1;
     display: flex;
     justify-content: center;
+    min-width: 320px;
+    transform: translateY(-30px);
 }
 
 .hero-mascot img {
