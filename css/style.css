@@ -203,3 +203,41 @@ h6 {
 .contact-btn:hover {
     background-color: #919DD2;
 }
+
+
+/* Footer */
+
+.web-footer {
+    background-color: #0A1A5C;
+    color: #FFFFFF;
+    padding: 40px 0 20px 0;
+    margin-top: 60px;
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.quick-links li {
+    margin-bottom: 8px;
+
+}
+
+.quick-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
