@@ -20,6 +20,7 @@ h6 {
     color: #FFFFFF;
 }
 
+
 /* navbar */
 
 .navbar {
@@ -87,12 +88,17 @@ h6 {
 }
 
 .lost-btn {
-    background-color: #FFFFFF;
-    color: #0A1A5C;
+    background-color: #BD9A50;
+    color: #ffffff;
     text-decoration: none;
     padding: 12px 24px;
     border-radius: 50px;
     font-weight: 600;
+}
+
+.lost-btn:hover {
+    background-color: #ffffff;
+    color: #BD9A50;
 }
 
 .found-btn {
@@ -112,7 +118,7 @@ h6 {
 }
 
 .hero-mascot {
-    flex: 1;
+    flex: 1.2;
     display: flex;
     justify-content: center;
     min-width: 320px;
@@ -120,10 +126,12 @@ h6 {
 }
 
 .hero-mascot img {
-    max-width: 380px;
+    max-height: 650px;
+    max-width: 560px;
     width: 100%;
     height: auto;
     object-fit: contain;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
 }
 
 /*Browse Page*/
