@@ -20,6 +20,11 @@ h6 {
     color: #FFFFFF;
 }
 
+.screenheading {
+    text-align: center;
+    font-size: 32px;
+}
+
 
 /* navbar */
 
@@ -60,7 +65,7 @@ h6 {
 
 
 .nav-links a:hover {
-    color: #2563eb;
+    color: #BD9A50;
 }
 
 /* home page */
