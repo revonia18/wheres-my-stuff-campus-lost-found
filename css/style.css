@@ -284,3 +284,28 @@ h6 {
 .submit-btn:hover {
     background-color: #BD9A50;
 }
+
+/* About Page */
+.aboutcard-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0A1A5C;
+    margin-bottom: 16px;
+}
+
+.about-card {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: #919DD2 0px 4px 12px;
+    color: #0A1A5C;
+}
+
+.instr-heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #BD9A50;
+}
