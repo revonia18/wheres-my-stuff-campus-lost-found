@@ -23,16 +23,16 @@
     <main>
         <h1 class="screenheading">Help Someone Find Their Stuff!</h1>
         <section>
-            <h2>Report Form</h2>
             <form class="report-card">
+                <h2 class="form-heading">Report Form</h2>
                 <label for="itemname">Name of Item*</label>
                 <input type="text" required id="itemname">
                 <br><br>
                 <label for="datefound">Date Found*</label>
                 <input type="date" required id="datefound">
                 <br><br>
-                <label for="category">Category:</label>
-                <select id="category" name="category">
+                <label for="category">Category:*</label>
+                <select id="category" name="category" required>
                     <option value="" disabled selected>Select a category</option>
                     <option value="electronics">Electronics & Tech</option>
                     <option value="cards-ids">IDs, Cards & Wallets</option>
@@ -45,26 +45,32 @@
                     <option value="other">Other / Misc</option>
                 </select>
                 <br><br>
-                <label for="category">Place Found</label>
-                <select id="category" name="category">
-                    <option value="" disabled selected>Select a category</option>
-                    <option value="electronics">B Lecture Halls</option>
-                    <option value="cards-ids">A Lecture Halls</option>
-                    <option value="keys">Gym</option>
-                    <option value="bags">Res Life</option>
-                    <option value="clothing">Student Center</option>
-                    <option value="drinkware">Computational Mathematics </option>
-                    <option value="books">Life Science Auditorium</option>
-                    <option value="eyewear">Senate Hall</option>
-                    <option value="other">Jakes Gerwell Hall</option>
+                <label for="place-found">Place Found*</label>
+                <select id="place-found" name="place-found" required>
+                    <option value="" disabled selected>Select a location</option>
+                    <option value="B Lecture Halls">B Lecture Halls</option>
+                    <option value="A Lecture Halls">A Lecture Halls</option>
+                    <option value=" Gym">Gym</option>
+                    <option value="Res Life">Res Life</option>
+                    <option value="Student Center">Student Center</option>
+                    <option value="Computational Mathematics">Computational Mathematics </option>
+                    <option value="Life Science Auditorium">Life Science Auditorium</option>
+                    <option value="Senate Hall">Senate Hall</option>
+                    <option value="Jakes Gerwell Hall">Jakes Gerwell Hall</option>
+                    <option value="The Barn">The Barn</option>
                 </select>
                 <br><br>
+                <label for="item-description">Additional Details / Comments</label>
+                <textarea id="item-description" name="description" rows="4"
+                    placeholder="Describe unique features (e.g. stickers, scratches, case color, or specific desk location)..."
+                    required></textarea>
+                <br><br>
                 <button>
-                    <label for="item-photo">Upload Picture of Item</label>
-                    <input type="file" id="item-photo" accept="image/*" class="file-input" hidden />
+                    <label for="item-photo">Upload Picture of Item*</label>
+                    <input type="file" id="item-photo" accept="image/*" class="file-input" hidden required />
                 </button>
                 <br><br><br>
-                <button>Submit</button>
+                <button class="submit-btn">Submit</button>
 
             </form>
         </section>
