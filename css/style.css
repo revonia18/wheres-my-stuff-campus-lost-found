@@ -248,7 +248,7 @@ h6 {
     max-width: 600px;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 32px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: #919DD2 0px 4px 10px;
 }
@@ -270,19 +270,91 @@ h6 {
     resize: none;
 }
 
-.submit-btn {
-    background-color: #0A1A5C;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 50px;
+.form-group label {
     font-weight: 600;
-    border: 2px solid #FFFFFF;
-    text-align: center;
+    font-size: 14px;
+    color: #0A1A5C;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #0A1A5C;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
 .submit-btn:hover {
     background-color: #BD9A50;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+
+.report-form input[type="text"],
+.report-form input[type="date"],
+.report-form select,
+.report-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+    color: #0A1A5C;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.report-form input:focus,
+.report-form select:focus,
+.report-form textarea:focus {
+    background-color: #ffffff;
+    border-color: #0A1A5C;
+    box-shadow: 0 0 0 3px rgba(10, 26, 92, 0.12);
+}
+
+.file-input {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #e2e8f0;
+    color: #0A1A5C;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px dashed #94a3b8;
+    transition: background-color 0.2s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #cbd5e1;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8;
+    font-size: 14px;
 }
 
 /* About Page */
