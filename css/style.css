@@ -167,6 +167,10 @@ h6 {
     object-fit: contain;
 }
 
+.card[hidden] {
+    display: none;
+}
+
 .card-image {
     overflow: hidden;
     width: 100%;
@@ -187,6 +191,13 @@ h6 {
     font-weight: 600;
     margin: 16px 0 8px;
     color: #0A1A5C;
+}
+
+.card-info i {
+    width: 16px;
+    margin-right: 4px;
+    color: #BD9A50;
+    text-align: center;
 }
 
 .contact-btn {

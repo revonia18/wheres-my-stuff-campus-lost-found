@@ -5,7 +5,8 @@
     <title>Where's My Stuff</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                     <div class="filter-group">
                         <label for="search">Search:</label>
                         <div class="search-input-wrapper">
-                            <input type="search" id="search" placeholder="Type here to search..." required>
+                            <input type="search" id="search" placeholder="Type here to search...">
                             <button type="submit" class="btn-search">Search</button>
                         </div>
                     </div>
@@ -38,7 +39,7 @@
                 <div class="filter-group">
                     <label for="filter">Filter</label>
                     <select id="filter">
-                        <option>All Categories</option>
+                        <option value="all">All Categories</option>
                         <option value="electronics">Electronics & Tech</option>
                         <option value="cards-ids">IDs, Cards & Wallets</option>
                         <option value="keys">Keys & Badges</option>
@@ -53,91 +54,101 @@
 
                 <div class="filter-group">
                     <label for="date-lost">Date Lost</label>
-                    <input type="date">
+                    <input type="date" id="date-lost">
                 </div>
 
                 <div class="filter-group">
                     <label for="Location">Location</label>
-                    <input type="text" placeholde="e.g Student Centre">
+                    <input type="text" id="location" placeholder="e.g. Student Centre">
                 </div>
             </form>
         </section>
 
         <section id="card-row">
-            <div class="card">
+            <div class="card" data-category="electronics" data-date="2026-09-06">
                 <div class="card-image"><img src="images/airpods.jpg" alt="Airpods with a pink polkadot case" /></div>
                 <div class="card-content">
                     <h3 class="card-title">Airpods</h3>
                     <div class="card-info">
-                        <p>Life Sciences Auditorium<br></p>
-                        <p>Date found : 09/02<br><br></p>
+                        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong> Life
+                            Sciences Auditorium<br></p>
+                        <p><i class="fa-solid fa-calendar" aria-hidden="true"></i> <strong>Date Found:</strong>
+                            09/06<br><br></p>
                     </div>
 
                     <a href="" class="contact-btn">Contact Finder</a>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-category="books" data-date="2026-09-06">
                 <div class="card-image"><img src="images/textbook.jpg" alt="Pink Chemistry Textbook" /></div>
                 <div class="card-content">
                     <h3 class="card-title">Textbook</h3>
                     <div class="card-info">
-                        <p>B Block, B2</p>
-                        <p>Date found : 09/02<br><br></p>
+                        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong> B
+                            Lecture Halls<br></p>
+                        <p><i class="fa-solid fa-calendar" aria-hidden="true"></i> <strong>Date Found:</strong>
+                            09/06<br><br></p>
                     </div>
 
                     <a href="" class="contact-btn">Contact Finder</a>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-category="keys" data-date="2026-09-06">
                 <div class="card-image"><img src="images/keys.jpg" alt="Keys" /></div>
                 <div class="card-content">
                     <h3 class="card-title">Keys</h3>
                     <div class="card-info">
-                        <p>The Barn<br></p>
-                        <p>Date found : 09/02<br><br></p>
+                        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong>
+                            Library<br></p>
+                        <p><i class="fa-solid fa-calendar" aria-hidden="true"></i> <strong>Date Found:</strong>
+                            09/06<br><br></p>
                     </div>
 
                     <a href="" class="contact-btn">Contact Finder</a>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-image"><img src="images/calculator.jpg" alt="Blue Casio Caluator with sticker" /></div>
+            <div class="card" data-category="electronics" data-date="2026-09-06">
+                <div class="card-image"><img src="images/calculator.jpg" alt="Blue Casio Calculator with sticker" />
+                </div>
                 <div class="card-content">
-                    <h3 class="card-title">Casio Calulator</h3>
+                    <h3 class="card-title">Casio Calculator</h3>
                     <div class="card-info">
-                        <p>Library , Level 10<br></p>
-                        <p>Date found : 09/06<br><br></p>
+                        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong>
+                            Library<br></p>
+                        <p><i class="fa-solid fa-calendar" aria-hidden="true"></i> <strong>Date Found:</strong>
+                            09/06<br><br></p>
                     </div>
-
                     <a href="" class="contact-btn">Contact Finder</a>
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-image"><img src="images/purse.jpg" alt="Pink victoria Secret Purse" /></div>
+            <div class="card" data-category="other" data-date="2026-09-01">
+                <div class="card-image"><img src="images/purse.jpg" alt="Pink Victoria's Secret purse" /></div>
                 <div class="card-content">
                     <h3 class="card-title">Purse</h3>
                     <div class="card-info">
-                        <p>Law Clinic<br></p>
-                        <p>Date found : 09/01<br><br></p>
+                        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong>
+                            Gym<br></p>
+                        <p><i class="fa-solid fa-calendar" aria-hidden="true"></i> <strong>Date Found:</strong>
+                            09/01<br><br></p>
                     </div>
-
                     <a href="" class="contact-btn">Contact Finder</a>
                 </div>
             </div>
 
-            <div class="card">
+            <div class="card" data-category="other" data-date="2026-08-15">
                 <div class="card-image"><img src="images/dominos.jpg" alt="Box of dominos" /></div>
                 <div class="card-content">
                     <h3 class="card-title">Dominos</h3>
                     <div class="card-info">
-                        <p>Student Center<br></p>
-                        <p>Date found : 08/15<br><br></p>
+                        <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong>
+                            Student Center<br></p>
+                        <p><i class="fa-solid fa-calendar" aria-hidden="true"></i> <strong>Date Found:</strong>
+                            08/15<br><br></p>
                     </div>
-
                     <a href="" class="contact-btn">Contact Finder</a>
                 </div>
             </div>
@@ -161,7 +172,7 @@
             <p>&copy; 2026 Where's My Stuff. Built by Revonia for students, by students.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
