@@ -116,6 +116,11 @@ h6 {
     border: 2px solid #FFFFFF;
 }
 
+.found-btn:hover {
+    background-color: #BD9A50;
+    color: #0A1A5C;
+}
+
 .hero-text {
     flex: 1;
     max-width: 600px;
