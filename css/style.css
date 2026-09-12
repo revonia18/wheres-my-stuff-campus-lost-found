@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
 
 body {
     background-color: #0A1A5C;
     font-family: 'Inter', sans-serif;
     min-height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 main {
@@ -490,4 +501,152 @@ textarea::placeholder {
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        padding: 16px 24px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 48px 32px;
+        gap: 24px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+
+    .hero-mascot {
+        min-width: 0;
+    }
+
+    .find form {
+        padding: 24px;
+    }
+
+    .about-card {
+        width: calc(100% - 32px);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 8px 16px;
+    }
+
+    .screenheading {
+        padding: 0 16px;
+        font-size: 26px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px 24px;
+        text-align: center;
+    }
+
+    .hero-text,
+    .hero-mascot {
+        width: 100%;
+        transform: none;
+    }
+
+    .hero-title {
+        margin-bottom: 24px;
+        font-size: clamp(36px, 12vw, 52px);
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-mascot img {
+        max-height: 420px;
+    }
+
+    .find form {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 14px;
+        padding: 20px 16px;
+    }
+
+    .filter-bar,
+    .filter-group,
+    .search-input-wrapper {
+        width: 100%;
+    }
+
+    .filter-group {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .filter-group input[type="search"],
+    .filter-group input[type="text"],
+    .filter-group input[type="date"],
+    .filter-group select,
+    .btn-search {
+        width: 100%;
+        min-height: 44px;
+    }
+
+    .search-input-wrapper {
+        align-items: stretch;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #card-row {
+        gap: 20px;
+        width: calc(100% - 32px);
+        padding-top: 12px;
+    }
+
+    .card {
+        max-width: none;
+    }
+
+    .card-image,
+    .card-image img {
+        height: 180px;
+    }
+
+    .report-card {
+        padding: 24px 20px;
+    }
+
+    .about-card {
+        padding: 24px 20px;
+    }
+
+    .story-content {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .story-mascot {
+        flex: 0 0 auto;
+        max-width: 180px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        padding: 0 16px;
+    }
 }
