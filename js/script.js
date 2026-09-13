@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div class="card-info">
                         <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> <strong>Location:</strong> ${escapeHTML(location)}</p>
                         <p><i class="fa-solid fa-calendar" aria-hidden="true"></i> <strong>Date Found:</strong> ${escapeHTML(date)}</p>
-                    </div>
+                    </div><br>
                     <a href="#" class="contact-btn">Contact Finder</a>
                 </div>`;
             if (typeof item.image === "string" && item.image.startsWith("data:image/")) {
