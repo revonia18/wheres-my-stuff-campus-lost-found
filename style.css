@@ -50,10 +50,19 @@ h6 {
 
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 20px;
     font-weight: 700;
     color: #0A1A5C;
     text-decoration: none;
+}
+
+.logo img {
+    width: 34px;
+    height: 42px;
+    object-fit: contain;
 }
 
 
